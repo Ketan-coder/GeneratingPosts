@@ -48,6 +48,8 @@ def draw_border(img, pt1, pt2, color, thickness, r, d):
     cv2.line(img, (x2, y2 - r), (x2, y2 - r - d), color, thickness)
     cv2.ellipse(img, (x2 - r, y2 - r), (r, r), 0, 0, 90, color, thickness)
 
+
+# Variables
 image = cv2.imread('Template.jpg')
 quotes_list = ["I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best._-Marilyn Monroe"
                 ,"So many books, so little time_-Marcus Tullius Cicero"
@@ -57,6 +59,7 @@ fonts_list = [cv2.FONT_HERSHEY_SCRIPT_COMPLEX]
 colors = [(238,190,121),(176,147,219),(180,191,247),(43,42,4),(241,241,241)]
 num = [1,2,3,4,5,6,7,8,9,10]
 
+# Main Execution
 ran_quotes = random.choice(quotes_list)
 ran_colors = random.choice(colors[0:2])
 
